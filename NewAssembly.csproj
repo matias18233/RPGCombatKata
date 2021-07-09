@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Model\Character.cs" />
     <Compile Include="Assets\Scripts\Presenter\GamePresenter.cs" />
+    <Compile Include="Assets\Scripts\View\CharacterView.cs" />
+    <Compile Include="Assets\Scripts\View\GameView.cs" />
     <Compile Include="Assets\Scripts\View\IGameView.cs" />
   </ItemGroup>
   <ItemGroup>

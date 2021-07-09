@@ -5,15 +5,19 @@ using UnityEngine;
 public class GamePresenter
 {
     List<Character> Characters = new List<Character>();
-
     IGameView gameView;
 
     public GamePresenter(IGameView gameView)
     {
         this.gameView = gameView;
-        
-        Characters.Add(new Character("Nicolas"));
-        Characters.Add(new Character("Matias"));
+
+        Character nicolas = new Character("Nicolas");
+        Characters.Add(nicolas);
+        gameView.OnCreate(nicolas);
+
+        Character matias = new Character("Matias");
+        Characters.Add(matias);
+        gameView.OnCreate(matias);
     }
 
     public void Attack(string nameOrigin, string nameTarget)
@@ -21,7 +25,11 @@ public class GamePresenter
         Character origin = FindCharacter(nameOrigin);
         Character target = FindCharacter(nameTarget);
 
+        if (origin == null || target == null) return;
+
         origin.DealDamage(target);
+
+        gameView.OnUpdate(target);
     }
 
     public void Heal(string nameOrigin, string nameTarget)
@@ -29,7 +37,11 @@ public class GamePresenter
         Character origin = FindCharacter(nameOrigin);
         Character target = FindCharacter(nameTarget);
 
+        if (origin == null || target == null) return;
+        
         origin.Heal(target);
+
+        gameView.OnUpdate(target);
     }
 
     public Character FindCharacter(string name) => Characters.Find(character => character.Name.Equals(name));

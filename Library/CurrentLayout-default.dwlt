@@ -41,10 +41,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 496
-    height: 588
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 486
+    height: 654
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -69,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1575
-    height: 588
+    width: 1540
+    height: 654
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 100
+  controlID: 56
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,12 +90,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 496
+    x: 486
     y: 0
-    width: 1079
-    height: 588
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 1054
+    height: 654
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -121,12 +121,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1575
+    width: 1540
     height: 947
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 99
+  controlID: 55
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,24 +137,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 588
-    width: 1575
-    height: 359
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 12}
+    y: 654
+    width: 1540
+    height: 293
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
   - {fileID: 12}
-  m_Selected: 2
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,10 +176,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
-  controlID: 55
+  controlID: 107
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,12 +195,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1575
+    x: 1540
     y: 0
-    width: 345
+    width: 380
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -299,13 +299,13 @@ MonoBehaviour:
     height: 338
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 329
-    splitterInitialOffset: 236
+    ID: 112
+    splitterInitialOffset: 244
     currentActiveSplitter: -1
-    realSizes: a400000068000000
+    realSizes: b10000005b000000
     relativeSizes:
-    - 0.6119403
-    - 0.38805968
+    - 0.6604478
+    - 0.33955222
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
     lastTotalSize: 268
@@ -355,9 +355,9 @@ MonoBehaviour:
       uniqueId: '[KataNew][suite]'
       name: KataNew
       fullName: KataNew
-      resultStatus: 1
-      duration: 0.0728966
-      messages: 
+      resultStatus: 4
+      duration: 0.0546133
+      messages: One or more child tests were ignored
       output: 
       stacktrace: 
       notRunnable: 0
@@ -371,9 +371,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/xampp/htdocs/rpgcombatkataMVP/KataNew/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 0.0349313
-      messages: 
+      resultStatus: 4
+      duration: 0.0335717
+      messages: One or more child tests were ignored
       output: 
       stacktrace: 
       notRunnable: 0
@@ -387,9 +387,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 0.0334487
-      messages: 
+      resultStatus: 4
+      duration: 0.0326301
+      messages: One or more child tests were ignored
       output: 
       stacktrace: 
       notRunnable: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
       name: CharacterTest
       fullName: Tests.CharacterTest
       resultStatus: 1
-      duration: 0.0312601
+      duration: 0.0455009
       messages: 
       output: 
       stacktrace: 
@@ -415,12 +415,97 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1014
+      uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.AttackIsIncreasedBy50PercentWhenTargetIs5LevelsBelow]
+      name: AttackIsIncreasedBy50PercentWhenTargetIs5LevelsBelow
+      fullName: Tests.CharacterTest.AttackIsIncreasedBy50PercentWhenTargetIs5LevelsBelow
+      resultStatus: 1
+      duration: 0.0159503
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterTest][suite]
+    - id: 1015
+      uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.AttackIsReducedBy50PercentWhenTargetIs5LevelsAbove]
+      name: AttackIsReducedBy50PercentWhenTargetIs5LevelsAbove
+      fullName: Tests.CharacterTest.AttackIsReducedBy50PercentWhenTargetIs5LevelsAbove
+      resultStatus: 1
+      duration: 0.0005088
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterTest][suite]
+    - id: 1011
+      uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.CharacterCannotDealDamageToHimself]
+      name: CharacterCannotDealDamageToHimself
+      fullName: Tests.CharacterTest.CharacterCannotDealDamageToHimself
+      resultStatus: 1
+      duration: 0.0005155
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterTest][suite]
+    - id: 1012
+      uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.CharacterCannotHealEnemies]
+      name: CharacterCannotHealEnemies
+      fullName: Tests.CharacterTest.CharacterCannotHealEnemies
+      resultStatus: 1
+      duration: 0.0003375
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterTest][suite]
     - id: 1009
       uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.CharacterCannotHealIsDead]
       name: CharacterCannotHealIsDead
       fullName: Tests.CharacterTest.CharacterCannotHealIsDead
       resultStatus: 1
-      duration: 0.016845
+      duration: 0.0004028
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterTest][suite]
+    - id: 1013
+      uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.CharacterCharacterCanHealHimself]
+      name: CharacterCharacterCanHealHimself
+      fullName: Tests.CharacterTest.CharacterCharacterCanHealHimself
+      resultStatus: 1
+      duration: 0.0003004
       messages: 
       output: 
       stacktrace: 
@@ -433,11 +518,11 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterTest][suite]
     - id: 1006
-      uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.CharacterDealDamage]
-      name: CharacterDealDamage
-      fullName: Tests.CharacterTest.CharacterDealDamage
+      uniqueId: Tests.dll/Tests/CharacterTest/[Tests][Tests.CharacterTest.CharacterDealDamageToOtherCharacter]
+      name: CharacterDealDamageToOtherCharacter
+      fullName: Tests.CharacterTest.CharacterDealDamageToOtherCharacter
       resultStatus: 1
-      duration: 0.0007635
+      duration: 0.0002738
       messages: 
       output: 
       stacktrace: 
@@ -454,7 +539,7 @@ MonoBehaviour:
       name: CharacterMaxHeal
       fullName: Tests.CharacterTest.CharacterMaxHeal
       resultStatus: 1
-      duration: 0.0164325
+      duration: 0.0005336
       messages: 
       output: 
       stacktrace: 
@@ -471,7 +556,7 @@ MonoBehaviour:
       name: CharactersDiesOnHealthBelow0
       fullName: Tests.CharacterTest.CharactersDiesOnHealthBelow0
       resultStatus: 1
-      duration: 0.0003343
+      duration: 0.0006504
       messages: 
       output: 
       stacktrace: 
@@ -488,7 +573,7 @@ MonoBehaviour:
       name: CharacterTakeDamage
       fullName: Tests.CharacterTest.CharacterTakeDamage
       resultStatus: 1
-      duration: 0.0003916
+      duration: 0.0002719
       messages: 
       output: 
       stacktrace: 
@@ -505,7 +590,7 @@ MonoBehaviour:
       name: CharacterTakeHeal
       fullName: Tests.CharacterTest.CharacterTakeHeal
       resultStatus: 1
-      duration: 0.0172048
+      duration: 0.0002944
       messages: 
       output: 
       stacktrace: 
@@ -522,7 +607,7 @@ MonoBehaviour:
       name: CharacterTestAlive
       fullName: Tests.CharacterTest.CharacterTestAlive
       resultStatus: 1
-      duration: 0.0006325
+      duration: 0.000429
       messages: 
       output: 
       stacktrace: 
@@ -539,7 +624,7 @@ MonoBehaviour:
       name: CharacterTestHealth
       fullName: Tests.CharacterTest.CharacterTestHealth
       resultStatus: 1
-      duration: 0.0003292
+      duration: 0.0002558
       messages: 
       output: 
       stacktrace: 
@@ -556,7 +641,7 @@ MonoBehaviour:
       name: CharacterTestLevel
       fullName: Tests.CharacterTest.CharacterTestLevel
       resultStatus: 1
-      duration: 0.0004559
+      duration: 0.000247
       messages: 
       output: 
       stacktrace: 
@@ -568,13 +653,63 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterTest][suite]
-    m_ResultText: CharacterMaxHeal (0,016s)
+    - id: 1016
+      uniqueId: Tests.dll/Tests/[Tests][Tests.GamePresenterTest][suite]
+      name: GamePresenterTest
+      fullName: Tests.GamePresenterTest
+      resultStatus: 4
+      duration: 0.0162085
+      messages: One or more child tests were ignored
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1020
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1017
+      uniqueId: Tests.dll/Tests/GamePresenterTest/[Tests][Tests.GamePresenterTest.GamePresenterAttack]
+      name: GamePresenterAttack
+      fullName: Tests.GamePresenterTest.GamePresenterAttack
+      resultStatus: 0
+      duration: 0
+      messages: No implementado
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 1
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.GamePresenterTest][suite]
+    - id: 1018
+      uniqueId: Tests.dll/Tests/GamePresenterTest/[Tests][Tests.GamePresenterTest.GamePresenterHeal]
+      name: GamePresenterHeal
+      fullName: Tests.GamePresenterTest.GamePresenterHeal
+      resultStatus: 0
+      duration: 0
+      messages: No implementado
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 1
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.GamePresenterTest][suite]
+    m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 32}
-      m_SelectedIDs: 4c604d8b
-      m_LastClickedID: -1957863348
-      m_ExpandedIDs: 7837188c02637996e100c39c628c85a563e05ab3cf6d9eb8813f26cf825b4dedf69269f5e557abf7dc65f802edf47f14c99a1d1e8cf0ac218359db411c9850448396965b7dc7445e917e3b6bffffff7f
+      scrollPos: {x: 0, y: 147}
+      m_SelectedIDs: 17d6c94b
+      m_LastClickedID: 1271518743
+      m_ExpandedIDs: 7837188c02637996e100c39c628c85a563e05ab3cf6d9eb8901999cb813f26cf825b4dedf69269f5e557abf7dc65f802edf47f14c99a1d1e8cf0ac218359db411c9850448396965b7dc7445e917e3b6bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -622,9 +757,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 661
-    width: 1574
-    height: 338
+    y: 727
+    width: 1539
+    height: 272
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -639,20 +774,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: 56
-  m_LastProjectPath: C:\xampp\htdocs\rpgcombatkataMVP\KataNew
+  m_LastProjectPath: C:\xampp\htdocs\RPGCombatKataMPV
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac490000
-    m_LastClickedID: 18860
-    m_ExpandedIDs: 00000000a4490000ac490000e249000000ca9a3b
+    m_SelectedIDs: 54450000
+    m_LastClickedID: 17748
+    m_ExpandedIDs: 00000000d2390000003a0000163a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,7 +815,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000d2390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -705,8 +840,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e8490000
-    m_LastClickedInstanceID: 18920
+    m_SelectedInstanceIDs: e2c3ffff
+    m_LastClickedInstanceID: -15390
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300004439000000000000c8480000
     m_RenameOverlay:
@@ -757,9 +892,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1575
+    x: 1540
     y: 73
-    width: 344
+    width: 379
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -797,29 +932,29 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 495
-    height: 567
+    width: 485
+    height: 633
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e8490000
-      m_LastClickedID: 0
-      m_ExpandedIDs: cee0ffff44e3ffff6ae4ffff3ce5ffffbae5ffff38e6ffff78e7ffffa2e7ffffcce7ffff4ae8ffff1ce9ffff9ceaffffc6eafffff0eaffff6eebffffecebffff68edffff3ceeffffbaeeffffe4f1ffff68f2ffffe6f2ffff66f3ffff38f4ffff0af5ffff34f5ffff08f6ffffe4faffff
+      m_SelectedIDs: fab4ffff
+      m_LastClickedID: -19206
+      m_ExpandedIDs: fab4fffffeb4ffff02b5ffff06b5ffff82c2ffff84c2ffff06c3ffffb0c3ffffe2c3ffffd0ccffff38cdffffbed2ffff34d3ffff5cd5ffff86d7ffff9ed7ffffc0d7ffffe2d7ffffd0e8ffff46e9ffff96e9ffff1aebffff40ebffffbaebffff88ecffff56edffff24eefffff2efffff18f0ffff3ef0ffffbaf0ffffe0f0ffff06f1ffff2ef3ffffa8f3ffffcaf4ffff44f5ffff5ef8ffff84f8fffffef8ffffccf9ffff9afaffffa0faffffdefaffff60fbffffe23c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Character1(Clone)
+        m_OriginalName: Character1(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -27512
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -850,10 +985,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 496
+    x: 486
     y: 73
-    width: 1077
-    height: 567
+    width: 1052
+    height: 633
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9441781c0a2c1b849bd51dbc051b7f60
@@ -865,9 +1000,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 371.92743, y: 1472.2974, z: -167.11786}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 371.92743, y: 1472.2974, z: -167.11786}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -917,9 +1052,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 715.0799
     speed: 2
-    m_Value: 10
+    m_Value: 715.0799
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -965,10 +1100,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 496
+    x: 486
     y: 73
-    width: 1077
-    height: 567
+    width: 1052
+    height: 633
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -978,7 +1113,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 971, y: 546}
+  m_TargetSize: {x: 960, y: 2200}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -987,16 +1122,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 07000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -485.5
-    m_HBaseRangeMax: 485.5
-    m_VBaseRangeMin: -273
-    m_VBaseRangeMax: 273
+    m_HBaseRangeMin: -480
+    m_HBaseRangeMax: 480
+    m_VBaseRangeMin: -1100
+    m_VBaseRangeMax: 1100
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1005,7 +1140,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1014,23 +1149,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1077
-      height: 546
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 538.5, y: 273}
+      width: 1052
+      height: 612
+    m_Scale: {x: 0.27818182, y: 0.27818182}
+    m_Translation: {x: 526, y: 306}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -538.5
-      y: -273
-      width: 1077
-      height: 546
+      x: -1890.8496
+      y: -1100
+      width: 3781.6992
+      height: 2200
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1077, y: 567}
+  m_defaultScale: 0.27818182
+  m_LastWindowPixelSize: {x: 1052, y: 633}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1058,7 +1193,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 661
-    width: 1574
-    height: 338
+    y: 727
+    width: 1539
+    height: 272
   m_ViewDataDictionary: {fileID: 0}
