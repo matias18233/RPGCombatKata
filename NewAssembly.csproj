@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CF551697-7251-1246-81DD-A9CAC061CE8B}</ProjectGuid>
+    <ProjectGuid>{69DBCD0B-9AB7-AB5B-5CA0-2D16071A4E60}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NewAssembly</AssemblyName>
@@ -57,6 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Model\Character.cs" />
+    <Compile Include="Assets\Scripts\Presenter\GamePresenter.cs" />
+    <Compile Include="Assets\Scripts\View\IGameView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Assembly.asmdef" />

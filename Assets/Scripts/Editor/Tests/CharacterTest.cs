@@ -49,7 +49,7 @@ namespace Tests
         }
 
         [Test]
-        public void CharacterDealDamage()
+        public void CharacterDealDamageToOtherCharacter()
         {
             target = new Character();
 
@@ -102,6 +102,66 @@ namespace Tests
             character.TakeHeal(51);
 
             Assert.AreEqual(character.MaxHealth, character.Health);
+        }
+
+        [Test]
+        public void CharacterCannotDealDamageToHimself()
+        {
+            int initialHealth = character.Health;
+
+            character.DealDamage(character);
+
+            Assert.AreEqual(initialHealth, character.Health);
+        }
+
+        [Test]
+        public void CharacterCannotHealEnemies()
+        {
+            target = new Character();
+
+            target.Health = 200;
+
+            int initialHealth = target.Health;
+
+            character.Heal(target);
+
+            Assert.AreEqual(initialHealth, target.Health);
+        }
+
+        [Test]
+        public void CharacterCharacterCanHealHimself()
+        {
+            character.Health = 200;
+
+            int initialHealth = character.Health;
+
+            character.Heal(character);
+
+            Assert.AreEqual(initialHealth + character.Medicine, character.Health);
+        }
+
+        [Test]
+        public void AttackIsIncreasedBy50PercentWhenTargetIs5LevelsBelow()
+        {
+            target = new Character("", 1000, 7);
+
+            int initialHealth = character.Health;
+
+            target.DealDamage(character);
+
+            Assert.AreEqual(initialHealth - (target.AttackDamage * 1.5f), character.Health);
+        }
+
+        [Test]
+        public void AttackIsReducedBy50PercentWhenTargetIs5LevelsAbove()
+        {
+            target = new Character("", 1000, 7);
+
+            int initialHealth = target.Health;
+
+            character.DealDamage(target);
+
+            Assert.AreEqual(initialHealth - (character.AttackDamage * 0.5f), target.Health);
         }
     }
 }
