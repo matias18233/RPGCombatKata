@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Character
+﻿public class Character
 {
+
     public string Name { get; set; }
     public int MaxHealth { get; set; }
     public int Health { get; set; }
@@ -20,7 +16,6 @@ public class Character
         Health = MaxHealth;
         Level = level;
         Alive = true;
-
         Medicine = 100;
         AttackDamage = 50;
     }
@@ -31,9 +26,9 @@ public class Character
 
         int damage = AttackDamage;
 
-        if ((this.Level - target.Level) >= 5)
+        if ((Level - target.Level) >= 5)
             damage = (int)(AttackDamage * 1.5f);
-        else if ((target.Level - this.Level) >= 5)
+        else if ((target.Level - Level) >= 5)
             damage = (int)(AttackDamage * 0.5f);
 
         target.TakeDamage(damage);
@@ -41,7 +36,7 @@ public class Character
 
     public void TakeDamage(int damage)
     {
-
+        UnityEngine.Mathf.Clamp(Health, 0, MaxHealth);
         Health -= damage;
         if (Health <= 0)
         {
@@ -63,7 +58,37 @@ public class Character
 
         Health += heal;
 
+        //UnityEngine.Mathf.Clamp(Health, 0, MaxHealth);
         if (Health > MaxHealth)
             Health = MaxHealth;
     }
 }
+
+
+
+
+/*
+public abstract class BaseSkill
+{
+    public Character owner;
+    public Character target;
+
+    public abstract void Execute();
+    public void SetTarget(Character target) { this.target = target; }
+}
+
+public class Heal : BaseSkill
+{
+    public override void Execute()
+    {
+        owner.Heal(target);
+    }
+}
+public class Attack : BaseSkill
+{
+    public override void Execute()
+    {
+        owner.DealDamage(target);
+    }
+}
+*/

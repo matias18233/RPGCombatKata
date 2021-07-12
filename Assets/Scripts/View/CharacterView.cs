@@ -20,7 +20,7 @@ public class CharacterView : MonoBehaviour
 
     public void Create(Character character)
     {
-        this.Character = character;
+        Character = character;
         UpdateView();
     }
 }

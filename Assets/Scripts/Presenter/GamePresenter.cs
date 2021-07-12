@@ -28,7 +28,6 @@ public class GamePresenter
         if (origin == null || target == null) return;
 
         origin.DealDamage(target);
-
         gameView.OnUpdate(target);
     }
 
@@ -40,7 +39,6 @@ public class GamePresenter
         if (origin == null || target == null) return;
         
         origin.Heal(target);
-
         gameView.OnUpdate(target);
     }
 

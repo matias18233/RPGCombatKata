@@ -20,6 +20,8 @@ public class GameView : MonoBehaviour, IGameView
         btnAttack.onClick.AddListener(Attack);
     }
 
+
+    //UI botones
     public void Attack()
     {
         gamePresenter.Attack(origin.text, target.text);
@@ -30,10 +32,14 @@ public class GameView : MonoBehaviour, IGameView
         gamePresenter.Heal(origin.text, target.text);
     }
 
+
+    //Interfaz
     public void OnCreate(Character character)
     {
         // Busca un panel vacío en la vista
         CharacterView characterView = charactersViews.Find(cV => cV.Character == null);
+
+        //Menos vistas que personaje
         if (characterView == null)
         {
             // Instancia una nueva vista en caso de que queden todas ocupadas
@@ -43,6 +49,7 @@ public class GameView : MonoBehaviour, IGameView
             charactersViews.Add(characterView);
         }
 
+        //mas vistas
         characterView.Create(character);
     }
 

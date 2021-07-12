@@ -1,34 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
+using NSubstitute;
 
 namespace Tests
 {
     public class GamePresenterTest
     {
         GamePresenter gamePresenter;
-
+        IGameView gameView;
         [SetUp]
         public void SetUp()
         {
-            GameObject go = new GameObject();
-            GameView gameView = go.AddComponent<GameView>();
-
+            gameView = Substitute.For<IGameView>();
             gamePresenter = new GamePresenter(gameView);
         }
 
-        [Test][Ignore("No implementado")]
+        [Test]
         public void GamePresenterAttack()
         {
+            gameView.ClearReceivedCalls();
+
             gamePresenter.Attack("Matias", "Nicolas");
+            Character origin = gamePresenter.FindCharacter("Matias");
+            Character target = gamePresenter.FindCharacter("Nicolas");
+            origin.DealDamage(target);
+            gameView.Received(1).OnUpdate(target);
         }
 
-        [Test][Ignore("No implementado")]
+        [Test]
         public void GamePresenterHeal()
         {
-            gamePresenter.Heal("Nicolas", "Nicolas");
+            gameView.ClearReceivedCalls();
+
+            gamePresenter.Heal("Matias", "Matias");
+            Character origin = gamePresenter.FindCharacter("Matias");
+            Character target = gamePresenter.FindCharacter("Matias");
+            origin.Heal(target);
+            gameView.Received(1).OnUpdate(target);
         }
     }
 }
